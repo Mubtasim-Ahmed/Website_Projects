@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,91.9,300..800;1,91.9,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.cointainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+.box1 {
+    background-color: #4f0e08;
+    width: 210px;
+    height: 210px;
+    display: flex;
+    padding: 5px;
+    border-radius: 50%;
+
+}
+
+.box2 {
+    background-color: #711a48c6;
+    width: 210px;
+    height: 210px;
+    display: flex;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.k {
+    background-image: url(kitty.jpeg);
+    background-position: -12px 0px;
+    border: 20px;
+}
+
+.s {
+    background-image: url(spidey.jpg);
+    background-position: -12.5px 0px;
+    border: 20px;
+}
+
+button {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.box1:hover {
+    background-color: #c24e4ceb;
+}
+
+.box1:active {
+    background-color: hsl(10, 110%, 55%);
+}
+
+.box2:hover {
+    background-color: #d85fc2eb;
+}
+
+.box2:active {
+    background-color: hsla(311, 110%, 55%, 0.952);
+}
+@media only screen and (max-width: 465px) {
+
+    .cointainer {
+        flex-wrap: wrap;
+
+    }
+
+    .box {
+        margin: 15px;
+    }
+}
+@media only screen and (min-width: 715px) {
+    .cointainer {
+        padding: 90px;
+    }
+}
+@media only screen and (min-width: 1000px) {
+    .cointainer {
+        padding: 160px;
+    }
+}
