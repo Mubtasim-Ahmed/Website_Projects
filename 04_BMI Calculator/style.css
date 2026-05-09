@@ -1,0 +1,197 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  min-height: 100vh;
+  background: url('Background.jpg') center/cover no-repeat fixed;
+  padding: 2em;
+}
+.main-content {
+  display: flex;
+  gap: 2em;
+  max-width: 1000px;
+  margin: 0 auto;
+  align-items: flex-start;
+}
+.calculator-container {
+  background-color: #ffffff;
+  flex: 1;
+  min-width: 300px;
+  font-size: 15px;
+  padding: 3em;
+  box-shadow: 0 0 3.2em rgba(1, 3, 29, 0.2);
+  border-radius: 1em;
+}
+h2 {
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 1em;
+  color: #333;
+}
+h3 {
+  font-size: 1.3em;
+  margin-bottom: 1em;
+  color: #7e7979;
+}
+.input-wrapper input {
+  display: block;
+  width: 100%;
+  font-size: 1em;
+  padding: 0.5em;
+  border: 1px solid #616161;
+  border-radius: 0.25em;
+}
+.input-wrapper label {
+  display: block;
+  font-size: 1em;
+  font-weight: 600;
+  margin-bottom: 0.25em;
+  color: #333;
+}
+.input-wrapper:not(:last-child) {
+  margin-bottom: 1.2em;
+}
+.bmi-result {
+  background-color: #f4f4f4;
+  padding: 1.5em;
+  border-radius: 0.6em;
+  margin-top: 1em;
+  text-align: center;
+}
+.bmi-result p {
+  font-size: 1.1em;
+  margin-bottom: 0.3em;
+  color: #333;
+}
+#bmi-value {
+  font-size: 1.5em;
+  font-weight: 600;
+  color: #667eea;
+}
+#bmi-category {
+  font-size: 1.1em;
+  font-weight: 600;
+  margin-top: 0.3em;
+}
+.category-underweight {
+  color: #3498db !important;
+}
+.category-normal {
+  color: #27ae60 !important;
+}
+.category-overweight {
+  color: #f39c12 !important;
+}
+.category-obese {
+  color: #e74c3c !important;
+}
+.info-sidebar {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 1.5em;
+  border-radius: 1em;
+  flex: 0 0 300px;
+  box-shadow: 0 0 3.2em rgba(1, 3, 29, 0.2);
+}
+.bmi-info {
+  display: flex;  
+  flex-direction: column;
+  gap: 1em;
+}
+.info-item {
+  padding: 0.9em;
+  border-radius: 0.4em;
+  border-left: 4px solid;
+}
+.info-item strong {
+  display: block;
+  margin-bottom: 0.3em;
+  font-size: 0.95em;
+  color: #000000;
+}
+.info-item p {
+  font-size: 0.85em;
+  margin: 0;
+  color: #000000;
+}
+.underweight {
+  background-color: #e3f2fd;
+  border-left-color: #3498db;
+  color: #0d47a1;
+}
+.normal {
+  background-color: #e8f5e9;
+  border-left-color: #27ae60;
+  color: #1b5e20;
+}
+.overweight {
+  background-color: #fff3e0;
+  border-left-color: #f39c12;
+  color: #e65100;
+}
+.obese {
+  background-color: #ffebee;
+  border-left-color: #e74c3c;
+  color: #b71c1c;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    padding: 1.5em;
+  }
+  .main-content {
+    gap: 1.5em;
+  }
+  .calculator-container {
+    font-size: 14px;
+    padding: 2em;
+  }
+  .info-sidebar {
+    flex: 1;
+    padding: 1em;
+  }
+  .info-item {
+  padding: 0.45em;
+}
+  h2 {
+    font-size: 1.5em;
+  }
+  h3 {
+    font-size: 1.2em;
+  }
+}
+@media screen and (max-width: 480px) {
+  body {
+    padding: 0.5em;
+  }
+  .main-content {
+    flex-direction: column;
+  }
+  .calculator-container {
+    font-size: 12px;
+    padding: 1.5em;
+    width: 100%;
+  }
+  .info-sidebar {
+    padding: 2em;
+    width: 100%;
+  }
+  h2 {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+  }
+  h3 {
+    font-size: 1em;
+  }
+  .bmi-result {
+    padding: 1em;
+  }
+  #bmi-value {
+    font-size: 1.5em;
+  }
+  #bmi-category {
+    font-size: 1em;
+  }
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BMI Calculator</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="main-content">
+    <div class="calculator-container">
+      <h2>BMI Calculator</h2>
+      <div class="input-wrapper">
+        <label for="kg">Weight (Kilogram):</label>
+        <input type="number" id="kg" placeholder="Enter your weight" />
+      </div>
+      <div class="input-wrapper">
+        <label for="cm">Height (Centimeters):</label>
+        <input type="number" id="cm" placeholder="Enter your height" />
+      </div>
+      <div class="bmi-result">
+        <p>Your BMI: <span id="bmi-value">--</span></p>
+        <p id="bmi-category" class="category-normal">Enter your details</p>
+      </div>
+    </div>
+
+    <div class="info-sidebar">
+      <h3>BMI Categories</h3>
+      <div class="bmi-info">
+        <div class="info-item underweight">
+          <strong>Underweight</strong>
+          <p>BMI &lt; 18.5</p>
+        </div>
+        <div class="info-item normal">
+          <strong>Normal Weight</strong>
+          <p>BMI 18.5 - 24.9</p>
+        </div>
+        <div class="info-item overweight">
+          <strong>Overweight</strong>
+          <p>BMI 25 - 29.9</p>
+        </div>
+        <div class="info-item obese">
+          <strong>Obese</strong>
+          <p>BMI ≥ 30</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
