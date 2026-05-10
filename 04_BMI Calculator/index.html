@@ -13,12 +13,36 @@
     <div class="calculator-container">
       <h2>BMI Calculator</h2>
       <div class="input-wrapper">
-        <label for="kg">Weight (Kilogram):</label>
-        <input type="number" id="kg" placeholder="Enter your weight" />
+        <label for="kg">Weight:</label>
+        <input type="number" id="kg" placeholder="Enter your weight (kg)" />
       </div>
-      <div class="input-wrapper">
-        <label for="cm">Height (Centimeters):</label>
+      
+      <div class="height-option">
+        <label>Height:</label>
+        <div class="button-group">
+          <input type="radio" name="height-type" value="cm" id="cm-btn" checked style="display: none;" />
+          <label for="cm-btn" class="button-label active">Centimeters</label>
+          
+          <input type="radio" name="height-type" value="feet-inch" id="feet-btn" style="display: none;" />
+          <label for="feet-btn" class="button-label">Feet & Inches</label>
+        </div>
+      </div>
+      
+      <div class="input-wrapper" id="cm-wrapper">
         <input type="number" id="cm" placeholder="Enter your height" />
+      </div>
+      
+      <div class="input-wrapper" id="feet-inch-wrapper" style="display: none;">
+        <div style="display: flex; gap: 1em;">
+          <div style="flex: 1;">
+            <label for="feet">Feet:</label>
+            <input type="number" id="feet" placeholder="Feet" />
+          </div>
+          <div style="flex: 1;">
+            <label for="inch">Inches:</label>
+            <input type="number" id="inch" placeholder="Inches" />
+          </div>
+        </div>
       </div>
       <div class="bmi-result">
         <p>Your BMI: <span id="bmi-value">--</span></p>
