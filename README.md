@@ -1,5 +1,5 @@
 # Beginner Small Projects
-A collection of beginner-friendly frontend projects built using HTML, CSS, and JavaScript while practicing core web development concepts.
+A collection of beginner-friendly responsive frontend projects built using HTML, CSS, and JavaScript.
 -
 
 
