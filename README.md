@@ -30,6 +30,10 @@ This application allows users to calculate their BMI using either centimeters or
   - Feet & Inches
 - Responsive modern UI
 - BMI category indicator
+- BMI ideal weight range
+- Gives Health tips based on BMI Result
+
+🌐 Live Preview - https://mub-bmicalculator.netlify.app/
 
 ## Goals of This Repository
 - Practice JavaScript fundamentals
