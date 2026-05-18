@@ -198,8 +198,53 @@ h3 {
 .obese {
   background-color: #ffebee;
   border-left-color: #e74c3c;
-  color: #b71c1c;
 }
+
+/* Ideal Weight Range Section */
+.ideal-weight-section {
+  background-color: #eafafa;
+  padding: 1.4em;
+  border-radius: 0.6em;
+  margin-top: 1em;
+  border-left: 4px solid #60b9c9;
+}
+
+.ideal-weight-section h3 {
+  color: #333;
+  margin-bottom: 0.3em;
+  font-size: 1em;
+}
+
+.ideal-weight-text {
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #4a9baa;
+  margin: 0;
+}
+
+/* Health Tips Section */
+.health-tips-section {
+  background-color: #fffbf0;
+  padding: 1.5em;
+  border-radius: 0.6em;
+  margin-top: 1em;
+  border-left: 4px solid #f39c12;
+}
+
+.health-tips-section h3 {
+  color: #333;
+  margin-bottom: 0.3em;
+  font-size: 1em;
+}
+
+.health-tips-text {
+  font-size: 0.95em;
+  line-height: 1.5;
+  color: #333;
+  margin: 0;
+  color: #5b0e0e;
+}
+
 
 @media screen and (max-width: 768px) {
   body {
@@ -225,10 +270,16 @@ h3 {
   h3 {
     font-size: 1.2em;
   }
+  .ideal-weight-section {
+    padding: 1em;
+  }
+  .health-tips-section {
+    padding: 1em;
+  }
 }
 @media screen and (max-width: 480px) {
   body {
-    padding: 0.5em;
+    padding: 0.6em;
   }
   .main-content {
     flex-direction: column;
@@ -265,5 +316,11 @@ h3 {
   }
   .height-option {
   margin-bottom: .2em;
-}
+  }
+  .ideal-weight-section {
+    padding: .8em;
+  }
+  .health-tips-section {
+    padding: .8em;
+  }
 }
